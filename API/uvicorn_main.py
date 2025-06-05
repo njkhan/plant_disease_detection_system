@@ -10,11 +10,11 @@ app = FastAPI()
 
 # Trained model path
 work_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(work_dir, "trained_cnn_model.keras")
+model_path = os.path.join(work_dir, "../saved_models/trained_cnn_model.keras")
 
 # Load trained model
 cnn = tf.keras.models.load_model(model_path, compile=False, safe_mode=True)
-print(f"✅ Model Loaded Successfully! Expected Input Shape: {cnn.input_shape}")
+print(f"Model Loaded Successfully! Expected Input Shape: {cnn.input_shape}")
 
 # Class labels
 class_name = ['Apple___Apple_scab',
@@ -88,4 +88,4 @@ async def detect(file: UploadFile = File(...)):
 
 # Run the FastAPI app
 if __name__ == "__main__":
-    uvicorn.run(app, host='localhost', port=3000)
+    uvicorn.run(app, host='localhost', port=3001)
