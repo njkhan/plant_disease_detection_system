@@ -4,6 +4,6 @@ pandas
 Pillow
 opencv-python
 matplotlib
-tensorflow == 2.13.0
+tensorflow==2.16.2
 keras
 
