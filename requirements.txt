@@ -1,9 +1,4 @@
-python ==3.12.4
-streamlit version == 1.45.0
-pip install numpy
-pip install pandas
-pip install Pillow
-pip install opencv-python
-pip install matplotlib
-pip install tensorflow
-keras
+streamlit
+tensorflow
+numpy
+Pillow
