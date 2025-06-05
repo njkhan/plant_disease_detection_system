@@ -1,5 +1,4 @@
-python==3.12.4
-streamlit==1.45.0
+streamlit
 numpy
 pandas
 Pillow
@@ -7,3 +6,4 @@ opencv-python
 matplotlib
 tensorflow
 keras
+
